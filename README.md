@@ -18,3 +18,5 @@ $ npm install
 ```bash
 $ yarn electron-build
 ```
+
+![calculator]('screenshot.jpg')
