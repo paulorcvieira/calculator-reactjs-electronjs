@@ -1,19 +1,21 @@
 :root {
-  --bg-button: #f0f0f0;
-  --border-button: solid 1px #888;
+  --bg-button: #67666ec0;
+  --border-button: solid 1px #424147;
 }
 
 .button {
-  font-size: 1.4em;
+  font-size: 1.5em;
   background-color: var(--bg-button);
   border: none;
   border-right: var(--border-button);
   border-bottom: var(--border-button);
   outline: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 .button:active {
-  background-color: #ccc;
+  background-color: #a8a7ac;
 }
 
 .button.double {
@@ -22,13 +24,18 @@
 
 .button.triple {
   grid-column: span 3;
+  background-color: #424147c0;
+}
+
+.button.triple:active {
+  background-color: var(--bg-button);
 }
 
 .button.operation {
-  background-color: #fa8231;
+  background-color: #ff9b3a;
   color: #fff;
 }
 
 .button.button.operation:active {
-  background-color: #fa8231cc;
+  background-color: rgba(206, 124, 42, 0.6);
 }

@@ -1,7 +1,6 @@
 const electron = require('electron');
 
-const { app } = electron;
-const { BrowserWindow } = electron;
+const { app, BrowserWindow } = require('electron')
 
 const path = require('path');
 const isDev = require('electron-is-dev');
@@ -11,7 +10,7 @@ let mainWindow;
 function createWindow() {
   mainWindow = new BrowserWindow({
     width: 235,
-    height: 360,
+    height: 340,
     webPreferences: {
       nodeIntegration: true,
     },
